@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сай</title>
+    <title>Тарелка - Вишневые Аллеи Вики</title>
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="512x512">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/icon.png" type="image/png" sizez="512x512">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <a href="https://visneviye-allei-wiki.github.io/Wiki/">
-            <img src="images/bannerwiki.png" alt="Добро пожаловать на Вишневые Аллеи Вики!" class="banner">
-        </a>
-        <p>Добро пожаловать на Вишневые Аллеи Вики!</p>
+<body class="light-theme">
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <nav class="navigation">
+            <a href="https://visneviye-allei-wiki.github.io/Pages/">Все Статьи Вики</a>
+            <a href="#">Категории</a>
+            <a href="https://discord.gg/sAkkMxgh7f">Вики Сообщества</a>
+            <a href="https://visneviye-allei-wiki.github.io/sozdateli/">Создатели/Редакторы Вики</a>
+        </nav>
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Темная тема</span>
         </div>
-      
-        <div class="main-content">
-            <div class="content">
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <a href="https://visneviye-allei-wiki.github.io/Wiki/">
+                    <img src="images/bannerwiki.png" alt="Добро пожаловать на Вишневые Аллеи Вики" class="banner">
+                </a>
+            </div>
+            
+            <div class="divider"></div>
+        
+            <div class="content-wrapper">
+                <main class="main-info">
                 <h2>Основная информация</h2>
                 <p>Сай (midori_ivory) - один из администраторов дискорд-сервера <a href="https://discord.com/invite/wun8gmzdhJ">Вишневые Аллеи</a>, раньше был модератором, но, в связи с уходом <a href="link-to-cherr-profile">Черр</a>, был взят на должность админа для помощи <a href="link-to-vaff-profile">Вафф</a> в дальнейшей поддержке сервера.</p>
                 
@@ -26,7 +44,7 @@
                     <li>Он много раз покидал сервер. Последний раз он не заходил на сервер 1 месяц</li>
                 </ul>
             </div>
-            <div class="infobox">
+            <aside class="infobox">
                 <h2>Сай</h2>
                 <img src="images/Sai.png" alt="Сай" class="avatar">
                 <table>
@@ -46,7 +64,7 @@
                         <td>Возраст</td>
                         <td>NA</td>
                     </tr>
-                </table>
+                <aside class="infobox">
             </div>
         </div>
     </div>
